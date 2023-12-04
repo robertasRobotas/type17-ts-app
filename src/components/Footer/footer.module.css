@@ -1,0 +1,9 @@
+.wrapper {
+  height: 80px;
+  background-color: rgb(71, 71, 175);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  color: white;
+}
