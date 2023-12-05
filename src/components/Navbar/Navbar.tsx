@@ -3,14 +3,14 @@ import styles from "./navbar.module.css";
 
 type NavbarType = {
   title: string;
-  isUserActive: boolean;
+  isLoading: boolean;
 };
 
-const Navbar: React.FC<NavbarType> = ({ title, isUserActive }) => {
+const Navbar: React.FC<NavbarType> = ({ title, isLoading }) => {
   return (
     <div className={styles.wrapper}>
       <div>{title}</div>
-      <nav>{isUserActive ? <>ACTIVE</> : <>NOT ACTIVE</>}</nav>
+      <nav>{isLoading ? <>Spinner</> : <>Component</>}</nav>
     </div>
   );
 };
